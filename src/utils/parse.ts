@@ -21,7 +21,7 @@ export function parseColor (color = '') {
   }
   
   export function hexValue (components: any) {
-    return '#' + components.map(c => `0${c.toString(16).toUpperCase()}`.slice(-2)).join('')
+    return '#' + components.map((c: any) => `0${c.toString(16).toUpperCase()}`.slice(-2)).join('')
   }
   
   export function tint (components: any, intensity: any) {

@@ -12,7 +12,7 @@ const find = () => {
     colorResult.value = getColors(color.value)
     console.log("colorResult", colorResult)
     messError.value = ''
-  } catch (e: string) {
+  } catch (e: any) {
     messError.value = e
   }
 }
